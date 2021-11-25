@@ -4,7 +4,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConfigurationProperties("spring.masterDatasource")
+@ConfigurationProperties("spring.masterdatasource")
 public class MasterDatabaseConfigProperties {
 
     private String url;

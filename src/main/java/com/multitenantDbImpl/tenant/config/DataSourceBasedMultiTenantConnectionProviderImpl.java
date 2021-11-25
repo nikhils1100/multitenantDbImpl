@@ -29,8 +29,8 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
     @Autowired
     private MasterTenantRepository masterTenantRepository;
 
-    @Autowired
-    ApplicationContext applicationContext;
+//    @Autowired
+//    ApplicationContext applicationContext;
 
     @Override
     protected DataSource selectAnyDataSource() {
