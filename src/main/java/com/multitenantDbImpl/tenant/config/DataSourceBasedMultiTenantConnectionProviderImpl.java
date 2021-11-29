@@ -8,6 +8,7 @@ import org.hibernate.engine.jdbc.connections.spi.AbstractDataSourceBasedMultiTen
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -29,8 +30,8 @@ public class DataSourceBasedMultiTenantConnectionProviderImpl extends AbstractDa
     @Autowired
     private MasterTenantRepository masterTenantRepository;
 
-//    @Autowired
-//    ApplicationContext applicationContext;
+    @Autowired
+    ApplicationContext applicationContext;
 
     @Override
     protected DataSource selectAnyDataSource() {
